@@ -44,7 +44,6 @@ exports.toAdjacency = function (graph, hydrate) {
     if(empty(value)) return edges
     return {value: value, edges: edges}
   }
-  console.log(graph)
   graph.eachNode(function (id) {
     adj[id] = []
   })
