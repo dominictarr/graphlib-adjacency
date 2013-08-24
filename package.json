@@ -1,7 +1,7 @@
 {
   "name": "graphlib-adjacency",
   "description": "convert to and from adjacency lists and graphlib",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "https://github.com/dominictarr/graphlib-adjacency",
   "repository": {
     "type": "git",
