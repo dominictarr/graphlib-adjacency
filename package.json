@@ -1,6 +1,6 @@
 {
   "name": "graphlib-adjacency",
-  "description": "",
+  "description": "convert to and from adjacency lists and graphlib",
   "version": "1.0.0",
   "homepage": "https://github.com/dominictarr/graphlib-adjacency",
   "repository": {
@@ -8,12 +8,12 @@
     "url": "git://github.com/dominictarr/graphlib-adjacency.git"
   },
   "dependencies": {
+    "graphlib": "~0.0.1"
   },
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "scripts": {
     "test": "set -e; for t in test/*.js; do node $t; done"
   },
   "author": "Dominic Tarr <dominic.tarr@gmail.com> (http://dominictarr.com)",
-  "license": "MIT"  
+  "license": "MIT"
 }
