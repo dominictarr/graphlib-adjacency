@@ -1,5 +1,13 @@
 var Graph = require('graphlib').Graph
 
+
+function empty (val) {
+  if(!val) return true
+  if(k in val) return false
+  return true
+}
+
+exports.from = 
 exports.toGraph = function (adjacency, opts) {
   opts = opts || {}
   var value = opts.getValue || function (node) {
@@ -29,18 +37,14 @@ exports.toGraph = function (adjacency, opts) {
   return graph
 }
 
-function empty (val) {
-  if(!val) return true
-  if(k in val) return false
-  return true
-}
-
+exports.to =
 exports.toAdjacency = function (graph, hydrate) {
   var adj = {}
   hydrate = hydrate || function (value, edges) {
     if(empty(value)) return edges
     return {value: value, edges: edges}
   }
+  console.log(graph)
   graph.eachNode(function (id) {
     adj[id] = []
   })
