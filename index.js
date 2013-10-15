@@ -1,9 +1,8 @@
 var Graph = require('graphlib').Graph
 
-
 function empty (val) {
   if(!val) return true
-  if(k in val) return false
+  for(k in val) return false
   return true
 }
 
@@ -47,6 +46,7 @@ exports.toAdjacency = function (graph, hydrate) {
   graph.eachNode(function (id) {
     adj[id] = []
   })
+
   graph.eachEdge(function (id, source, target) {
     adj[source].push(target)
   })
