@@ -8,7 +8,7 @@
     "url": "git://github.com/dominictarr/graphlib-adjacency.git"
   },
   "dependencies": {
-    "graphlib": "~0.0.1"
+    "graphlib": "~0.5"
   },
   "devDependencies": {},
   "scripts": {
